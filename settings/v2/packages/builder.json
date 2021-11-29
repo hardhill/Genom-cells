@@ -1,0 +1,15 @@
+{
+  "__version__": "1.2.9",
+  "splash-setting": {
+    "url": "C:\\PROJECTS\\Cocos\\logo-hh-mount.png",
+    "displayRatio": 0.4,
+    "totalTime": 1000,
+    "clearColor": {
+      "x": 1,
+      "y": 1,
+      "z": 1,
+      "w": 1
+    },
+    "displayWatermark": false
+  }
+}

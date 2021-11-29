@@ -30,7 +30,12 @@ export class Commander {
             typeCom = CommandType.Turn
             value = (24-com) * Math.PI/4
             this.cursor = (this.cursor < DNKLEN-1)?this.cursor + 1 : 0
-        }else{
+        }
+        // else if(com>=24&&com<32){
+        //     typeCom = CommandType.View
+        //     value = 32-com
+        // }
+        else{
             typeCom = CommandType.None
             let cur = this.cursor + com
             if(cur>DNKLEN-1){
