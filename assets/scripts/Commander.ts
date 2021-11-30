@@ -25,16 +25,17 @@ export class Commander {
         }else if(com>=8&&com<16){
             typeCom = CommandType.Genesis
             value = (16-com)*Math.PI/4
-            this.cursor = (this.cursor < DNKLEN-1)?this.cursor + 1 : 0
+            this.cursor = (this.cursor < DNKLEN-1)?this.cursor + 2 : 0
         }else if(com>=16&&com<24){
             typeCom = CommandType.Turn
             value = (24-com) * Math.PI/4
-            this.cursor = (this.cursor < DNKLEN-1)?this.cursor + 1 : 0
+            this.cursor = (this.cursor < DNKLEN-1)?this.cursor + 3 : 0
         }
-        // else if(com>=24&&com<32){
-        //     typeCom = CommandType.View
-        //     value = 32-com
-        // }
+        else if(com>=24&&com<32){
+            typeCom = CommandType.View
+            value = 32-com
+            this.cursor = (this.cursor < DNKLEN-1)?this.cursor + 4 : 0
+        }
         else{
             typeCom = CommandType.None
             let cur = this.cursor + com

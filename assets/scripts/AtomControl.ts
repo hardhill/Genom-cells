@@ -68,7 +68,10 @@ export class AtomControl extends Component {
                 this.health = this.health - 10
             }
             if (command.command == CommandType.View) {
-                this.health -= 1
+                let rot = 0.005*command.value * (command.value%2)==0?-1:1
+                let rb = this.node.getComponent(RigidBody2D)
+                rb.applyAngularImpulse(rot,true)
+                this.health -= 2
             }
             if (command.command == CommandType.None) {
                 this.health -= 1

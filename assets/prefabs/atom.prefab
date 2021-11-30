@@ -155,14 +155,14 @@
     "_group": 1,
     "_density": 1,
     "_sensor": false,
-    "_friction": 0.2,
+    "_friction": 0.6,
     "_restitution": 0,
     "_offset": {
       "__type__": "cc.Vec2",
       "x": 0,
       "y": 0
     },
-    "_radius": 10,
+    "_radius": 9.6,
     "_id": ""
   },
   {
@@ -184,7 +184,7 @@
     "_group": 1,
     "_density": 1,
     "_sensor": true,
-    "_friction": 0.2,
+    "_friction": 0.6,
     "_restitution": 0,
     "_offset": {
       "__type__": "cc.Vec2",
@@ -217,7 +217,7 @@
     "_allowSleep": true,
     "_gravityScale": 0,
     "_linearDamping": 0.4,
-    "_angularDamping": 0,
+    "_angularDamping": 0.4,
     "_linearVelocity": {
       "__type__": "cc.Vec2",
       "x": 0,
